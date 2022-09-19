@@ -2,27 +2,25 @@
 /*Создайте функцию, которая принимает неограниченное количество входящих данных, и возвращает количество строк, переданных ей в этом массиве. Решить с использованием стрелочных функций.
 */
 
-const strings = ["Anton", "Ivan", "Artem"];
+// const strings = ["Anton", "Ivan", "Artem"];
 
 const numberOfStrings = (...strings) => strings.length;
 
 /*Создайте функцию продвинутого калькулятора. Он принимает знак, а  затем неограниченное количество чисел, над которыми проведет указанную операцию. */
 
+
 const calculate = function (operator) {
-    const numbers = [num1, num2, ...numbers]
-    switch (operator) {
+  debugger; 
+  const example = [2,44,55,66,4,3,2];
+  switch (operator) {
     case '+':
-      let res = 0;
-      const mewNumber = numbers.map(function(...numbers) {
-        return res += numbers;
-      })
-      
+      return example.reduce((sum, number) => sum + number);
     case '-':
-      return arrNumbers.reduce((...numbers) => res - numbers);
+      return example.reduce((difference, number) => difference - number);
     case '*':
-      return arrNumbers.reduce((...numbers) => res * numbers);
+      return example.reduce((multiply, number) => multiply * number);
     case '/':
-      return arrNumbers.reduce((...numbers) => res / numbers);
+      return example.reduce((division, number) => division / number);
     default:
       return null;
   }
